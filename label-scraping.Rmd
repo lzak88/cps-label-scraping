@@ -1,0 +1,29 @@
+---
+title: "label-scraping"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(jsonlite)
+```
+
+```{r}
+json_raw <- fromJSON("https://api.census.gov/data/2021/cps/asec/mar/variables.json") 
+
+cps_raw <- enframe(unlist(json_raw))
+
+cps_raw <- cps_raw %>% separate(name, into = c(paste0("x", 1:3)))
+
+cps_df <- cps_raw %>%
+   select(x2, x3, value) %>%
+   filter(x3 == "label")
+
+cps_df <- cps_df %>% 
+  select(x2, value)%>% 
+  rename(
+    Variable = x2,
+    Label = value
+    )
+
+print(head(cps_df, 10))
+```
