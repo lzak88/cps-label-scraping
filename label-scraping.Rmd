@@ -16,7 +16,11 @@ cps_raw <- enframe(unlist(json_raw))
 head(cps_raw, 50)
 
 #separate out variable name and data type into separate columns
-cps_raw <- cps_raw %>% separate(name, into = c(paste0("x", 1:3)), sep = '([.])')
+cps_raw <- cps_raw %>% 
+  separate(name, 
+           into = c(paste0("x", 1:3)), 
+           sep = '([.])')
+
 head(cps_raw, 30)
 
 #check number of unique variables in data set (1044)
