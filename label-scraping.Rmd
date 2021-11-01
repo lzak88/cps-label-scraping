@@ -3,15 +3,13 @@ title: "label-scraping"
 output: html_document
 ---
 ```{r}
-library(dplyr)
 library(tidyverse)
 library(jsonlite)
-library(rjson)
 ```
 
 ```{r}
 #Import json file
-json_raw <- fromJSON("https://api.census.gov/data/2021/cps/asec/mar/variables.json") 
+json_raw <- fromJSON(file = "https://api.census.gov/data/2021/cps/asec/mar/variables.json") 
 
 #convert to a dataframe
 cps_raw <- enframe(unlist(json_raw))
