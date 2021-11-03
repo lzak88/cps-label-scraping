@@ -32,6 +32,7 @@ cps_df <- cps_df %>%
     Variable = x2,
     Label = value
   )
+
 #check results
 print(head(cps_df, 10))
 
