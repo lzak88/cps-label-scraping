@@ -13,7 +13,8 @@ head(cps_raw, 50)
 cps <- cps_raw %>% 
   rename(label = value) %>%
   separate(name, 
-           into = c("scrap", "variable", "metadata_type", "more_scrap", "value"), 
+           into = c("scrap", "variable", 
+                    "metadata_type", "more_scrap", "value"), 
            sep =  "\\.",
            extra = "merge") %>%
   filter(!(variable %in% c("for", "in", "ucgid"))) %>%
@@ -57,8 +58,7 @@ do_value_labels <- cps_value_labels %>%
 
 apply_value_labels <- cps %>%
   distinct(variable) %>%
-  str_glue_data("label values {variable} {variable}_lbl") %>% 
-  pull()
+  str_glue_data("label values {variable} {variable}_lbl") 
 
 #create do file text
 do_file_data <- c(glue("* Generated {Sys.Date()}"),
