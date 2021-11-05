@@ -30,7 +30,7 @@ length(cps_unique)
 #check results
 print(head(cps, 10))
 
-#Check number of variables in dataframe to make sure it matches 1044
+#Check number of variables in dataframe to make sure it matches 1041
 length(unique(cps$variable))
 
 #check that no null labels
