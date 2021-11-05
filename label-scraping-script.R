@@ -1,48 +1,76 @@
 library(tidyverse)
 library(jsonlite)
+library(glue)
 
 #Import json file
-json_raw <- fromJSON(file = "https://api.census.gov/data/2021/cps/asec/mar/variables.json") 
+json_raw <- jsonlite::fromJSON("https://api.census.gov/data/2021/cps/asec/mar/variables.json") 
 
 #convert to a dataframe
 cps_raw <- enframe(unlist(json_raw))
 head(cps_raw, 50)
 
 #separate out variable name and data type into separate columns
-cps_raw <- cps_raw %>% 
+cps <- cps_raw %>% 
+  rename(label = value) %>%
   separate(name, 
-           into = c(paste0("x", 1:3)), 
-           sep = '([.])')
+           into = c("scrap", "variable", "metadata_type", "more_scrap", "value"), 
+           sep =  "\\.",
+           extra = "merge") %>%
+  filter(!(variable %in% c("for", "in", "ucgid"))) %>%
+  select(-matches("scrap")) %>%
+  mutate(variable = tolower(variable))
 
-head(cps_raw, 30)
-
-#check number of unique variables in data set (1044)
-cps_unique <- unique(cps_raw$x2)
+#check number of unique variables in data set 
+# (1044 minus 3: 'for', 'in', and 'ucgid' which are API predicates, not variables)
+cps_unique <- unique(cps$variable)
 length(cps_unique)
 
-#filter so you are only getting variables and their labels
-cps_df <- cps_raw %>%
-  select(x2, x3, value) %>%
-  filter(x3 == "label")
-
-#rename columns
-cps_df <- cps_df %>% 
-  select(x2, value)%>% 
-  rename(
-    Variable = x2,
-    Label = value
-  )
 
 #check results
-print(head(cps_df, 10))
+print(head(cps, 10))
 
 #Check number of variables in dataframe to make sure it matches 1044
-length(cps_df$Variable)
+length(unique(cps$variable))
 
 #check that no null labels
-sum(is.na(cps_df$Label))
+sum(is.na(cps$label))
 
-#Which variables not in label df (should be zero)
-cps_missing <- subset(cps_raw, !(x2 %in% cps_df$Variable))
-cps_missing <- unique(cps_missing$x2)
-cps_missing
+#filter so you are only getting variables and their labels
+cps_variable_labels <- cps %>%
+  filter(metadata_type == "label") %>%
+  select(variable, label)
+
+# create .do file text for variable labels
+do_variable_labels <- cps_variable_labels %>%
+  transmute(do_text = str_glue("label variable {variable} \"{label}\"")) %>%
+  pull()
+
+#filter so you are only getting variables, values, and their labels
+cps_value_labels <- cps %>% 
+  filter(metadata_type == "values") %>% 
+  select(variable, value, label)
+
+# create .do file text for variable values and labels
+do_value_labels <- cps_value_labels %>%
+  transmute(do_text = str_glue("label define {variable}_lbl {value} \"{label}\", add")) %>% 
+  pull()
+
+apply_value_labels <- cps %>%
+  distinct(variable) %>%
+  str_glue_data("label values {variable} {variable}_lbl") %>% 
+  pull()
+
+#create do file text
+do_file_data <- c(glue("* Generated {Sys.Date()}"),
+                  "",
+                  "// variable labels",
+                  do_variable_labels,
+                  "",
+                  "// value labels",
+                  do_value_labels,
+                  apply_value_labels)
+
+
+write_lines(do_file_data, "cps_variable_labels.do")
+
+
