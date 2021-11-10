@@ -73,6 +73,6 @@ do_file_data <- c(glue("* Generated {Sys.Date()}"),
                   apply_value_labels)
 
 
-write_lines(do_file_data, "cps_variable_labels_{year}.do")
+write_lines(do_file_data, glue("cps_variable_labels_{year}.do"))
 
 
