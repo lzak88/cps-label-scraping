@@ -1,9 +1,12 @@
 library(tidyverse)
-library(jsonlite)
+library(rjson)
 library(glue)
 
+year = 2021
+url = "https://api.census.gov/data/{year}/cps/asec/mar/variables.json"
 #Import json file
-json_raw <- jsonlite::fromJSON("https://api.census.gov/data/2021/cps/asec/mar/variables.json") 
+url
+json_raw <- rjson::fromJSON(url) 
 
 #convert to a dataframe
 cps_raw <- enframe(unlist(json_raw))
@@ -43,8 +46,7 @@ cps_variable_labels <- cps %>%
 
 # create .do file text for variable labels
 do_variable_labels <- cps_variable_labels %>%
-  transmute(do_text = str_glue("label variable {variable} \"{label}\"")) %>%
-  pull()
+  str_glue_data("label variable {variable} \"{label}\"")
 
 #filter so you are only getting variables, values, and their labels
 cps_value_labels <- cps %>% 
@@ -53,8 +55,7 @@ cps_value_labels <- cps %>%
 
 # create .do file text for variable values and labels
 do_value_labels <- cps_value_labels %>%
-  transmute(do_text = str_glue("label define {variable}_lbl {value} \"{label}\", add")) %>% 
-  pull()
+  str_glue_data("label define {variable}_lbl {value} \"{label}\", add") 
 
 apply_value_labels <- cps %>%
   distinct(variable) %>%
@@ -71,6 +72,6 @@ do_file_data <- c(glue("* Generated {Sys.Date()}"),
                   apply_value_labels)
 
 
-write_lines(do_file_data, "cps_variable_labels.do")
+write_lines(do_file_data, "cps_variable_labels_{year}.do")
 
 
