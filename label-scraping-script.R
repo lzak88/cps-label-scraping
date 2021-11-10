@@ -1,12 +1,12 @@
 library(tidyverse)
-library(rjson)
+library(jsonlite)
 library(glue)
 
 year = 2021
-url = "https://api.census.gov/data/{year}/cps/asec/mar/variables.json"
+url = glue("https://api.census.gov/data/{year}/cps/asec/mar/variables.json")
 #Import json file
 url
-json_raw <- rjson::fromJSON(url) 
+json_raw <- jsonlite::fromJSON(url) 
 
 #convert to a dataframe
 cps_raw <- enframe(unlist(json_raw))
