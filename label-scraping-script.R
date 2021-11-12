@@ -51,7 +51,8 @@ do_variable_labels <- cps_variable_labels %>%
 
 #filter so you are only getting variables, values, and their labels
 cps_value_labels <- cps %>% 
-  filter(metadata_type == "values") %>% 
+  filter(metadata_type == "values", 
+         !(value %in% c("min", "max", "description"))) %>% 
   select(variable, value, label)
 
 # create .do file text for variable values and labels
