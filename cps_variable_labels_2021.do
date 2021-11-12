@@ -1,4 +1,4 @@
-* Generated 2021-11-10
+* Generated 2021-11-12
 
 // variable labels
 label variable chelsew_yn "Child living outside the household"
@@ -1054,9 +1054,6 @@ label define i_now_mcaid_lbl 1 "Hotdeck imputation", add
 label define hcov_lbl 2 "Some members of the household", add
 label define hcov_lbl 1 "All members of the household", add
 label define hcov_lbl 3 "No members of the household", add
-label define spm_id_lbl min "0", add
-label define spm_id_lbl max "99999999", add
-label define spm_id_lbl description "0000000:99999999", add
 label define a_untype_lbl 4 "Re-entrant", add
 label define a_untype_lbl 3 "Job leaver", add
 label define a_untype_lbl 2 "Other job loser", add
@@ -1072,12 +1069,6 @@ label define i_now_outpriv_lbl 1 "Hotdeck imputation", add
 label define i_now_outpriv_lbl 3 "Whole unit imputation", add
 label define i_now_outpriv_lbl 0 "Reported", add
 label define i_now_outpriv_lbl 2 "Logical imputation", add
-label define fearnval_lbl min "-389961", add
-label define fearnval_lbl max "11699883", add
-label define fearnval_lbl description "Range", add
-label define eip_crd_lbl min "0", add
-label define eip_crd_lbl max "99999", add
-label define eip_crd_lbl description "Dollar amount", add
 label define fkindex_lbl 1 "Opposite-sex married couple family", add
 label define fkindex_lbl 4 "Female reference person", add
 label define fkindex_lbl 3 "Male reference person", add
@@ -1100,34 +1091,22 @@ label define i_now_priv_lbl 1 "Hotdeck imputation", add
 label define i_now_priv_lbl 0 "Reported", add
 label define i_now_priv_lbl 2 "Logical imputation", add
 label define i_now_priv_lbl 3 "Whole unit imputation", add
-label define paw_val_lbl min "0", add
-label define paw_val_lbl max "99999", add
-label define paw_val_lbl description "0:99999", add
 label define i_depmrkun_lbl 0 "Reported", add
 label define i_depmrkun_lbl 3 "Whole unit imputation", add
 label define i_depmrkun_lbl 2 "Logical imputation", add
 label define i_depmrkun_lbl 1 "Hotdeck imputation", add
 label define i_depmrkun_lbl -1 "Out of Universe", add
-label define a_age_lbl min "0", add
-label define a_age_lbl max "85", add
-label define a_age_lbl description "Range", add
 label define i_intval_lbl 12 "Value imputed is between 25-50% of total in composite variable", add
 label define i_intval_lbl 13 "Value imputed is between 50-75% of total in composite variable", add
 label define i_intval_lbl 14 "Value imputed is between 75-100% of total in composite variable", add
 label define i_intval_lbl 0 "No allocation", add
 label define i_intval_lbl 11 "Value imputed is less than 25% of total in composite variable", add
 label define i_intval_lbl 15 "Value is 100% imputed in composite variable", add
-label define ftotval_lbl min "-389961", add
-label define ftotval_lbl max "23399766", add
-label define ftotval_lbl description "Range", add
 label define prerelg_lbl 1 "Earnings Eligible", add
 label define prerelg_lbl 0 "Not Earnings Eligible", add
 label define trint_val1_lbl 1 "Topcoded", add
 label define trint_val1_lbl 0 "Not Topcoded", add
 label define marg_tax_lbl 0 "None", add
-label define marg_tax_lbl min "1", add
-label define marg_tax_lbl max "50", add
-label define marg_tax_lbl description "Range", add
 label define trint_val2_lbl 0 "Not Topcoded", add
 label define trint_val2_lbl 1 "Topcoded", add
 label define i_now_outmrk_lbl -1 "Out of Universe", add
@@ -1190,9 +1169,6 @@ label define a_clswkr_lbl 3 "State Government", add
 label define a_clswkr_lbl 8 "Never worked", add
 label define a_famnum_lbl 0 "Not a family member", add
 label define a_famnum_lbl 1 "Primary family member only", add
-label define a_famnum_lbl min "2", add
-label define a_famnum_lbl max "19", add
-label define a_famnum_lbl description "Range", add
 label define i_depmil_lbl 3 "Whole unit imputation", add
 label define i_depmil_lbl 2 "Logical imputation", add
 label define i_depmil_lbl -1 "Out of Universe", add
@@ -1213,9 +1189,6 @@ label define pecert1_lbl -1 "Not in Universe", add
 label define tfin_val_lbl 0 "Not Topcoded", add
 label define tfin_val_lbl 1 "Topcoded", add
 label define fed_ret_lbl 0 "None", add
-label define fed_ret_lbl min "1", add
-label define fed_ret_lbl max "999999", add
-label define fed_ret_lbl description "1:999999", add
 label define pecert3_lbl -1 "Not in Universe", add
 label define pecert3_lbl 1 "Yes", add
 label define pecert3_lbl 2 "No", add
@@ -1288,9 +1261,6 @@ label define wemind_lbl 1 "Agriculture, forestry, fishing, and hunting", add
 label define wemind_lbl 9 "Professional, Scientific, Management, Administrative, And Waste Management Services", add
 label define wemind_lbl 11 "Arts, Entertainment, Recreation, Accommodation, and Food services", add
 label define wemind_lbl 10 "Educational, Health, and Social Services", add
-label define fpenval_lbl min "0", add
-label define fpenval_lbl max "9999999", add
-label define fpenval_lbl description "0:9999999", add
 label define now_milftyp_lbl 2 "Self-only plan", add
 label define now_milftyp_lbl 0 "Out of universe", add
 label define now_milftyp_lbl 1 "Family Plan", add
@@ -1340,9 +1310,6 @@ label define paw_mon_lbl 8 "Eight", add
 label define paw_mon_lbl 3 "Three", add
 label define paw_mon_lbl 6 "Six", add
 label define frsppct_lbl 0 "Not in related subfamilies", add
-label define frsppct_lbl min "1", add
-label define frsppct_lbl max "60000", add
-label define frsppct_lbl description "Range", add
 label define spm_tenmortstatus_lbl 1 "Owner with Mortgage", add
 label define spm_tenmortstatus_lbl 3 "Renter", add
 label define spm_tenmortstatus_lbl 2 "Owner with Mortgage or rent-free", add
@@ -1361,9 +1328,6 @@ label define i_occup_lbl 0 "No change", add
 label define i_occup_lbl 1 "Allocated", add
 label define i_occup_lbl 9 "Full record imputation (FL_665 ? 1)", add
 label define ffinval_lbl 0 "None or not in universe", add
-label define ffinval_lbl min "1", add
-label define ffinval_lbl max "3899961", add
-label define ffinval_lbl description "Range", add
 label define dir_lbl 1 "Yes", add
 label define dir_lbl 0 "Infant born after calendar year", add
 label define dir_lbl 2 "No", add
@@ -1394,9 +1358,6 @@ label define pen_yn_lbl 0 "Niu", add
 label define pen_yn_lbl 2 "No", add
 label define pen_yn_lbl 1 "Yes", add
 label define hedval_lbl 0 "None or not in universe", add
-label define hedval_lbl min "1", add
-label define hedval_lbl max "3899961", add
-label define hedval_lbl description "Range", add
 label define hrhtype_lbl 06 "Civilian male nonfamily householder", add
 label define hrhtype_lbl 04 "Unmarried civilian female primary family householder", add
 label define hrhtype_lbl 10 "Group quarters with secondary individuals only", add
@@ -1422,9 +1383,6 @@ label define now_outmrks_lbl 0 "Out of universe", add
 label define now_outmrks_lbl 1 "Yes", add
 label define i_hhotlu_lbl 1 "Allocated", add
 label define i_hhotlu_lbl 0 "No change", add
-label define rnt_val_lbl min "-9999", add
-label define rnt_val_lbl max "999999", add
-label define rnt_val_lbl description "-9999:999999", add
 label define now_ownmil_lbl 1 "Yes", add
 label define now_ownmil_lbl 0 "Out of universe", add
 label define now_ownmil_lbl 2 "No", add
@@ -1441,12 +1399,6 @@ label define i_phipval_lbl -1 "Out of Universe", add
 label define mcare_lbl 1 "Yes", add
 label define mcare_lbl 0 "Infant born after calendar year", add
 label define mcare_lbl 2 "No", add
-label define dst_val2_lbl min "0", add
-label define dst_val2_lbl max "999999", add
-label define dst_val2_lbl description "0:999999", add
-label define dst_val1_lbl min "0", add
-label define dst_val1_lbl max "999999", add
-label define dst_val1_lbl description "0:999999", add
 label define pxcohab_lbl 31 "Blank to Allocated Value Long.", add
 label define pxcohab_lbl 10 "Value To Value", add
 label define pxcohab_lbl 01 "BLANK   NO CHANGE", add
@@ -1476,9 +1428,6 @@ label define now_milftyp2_lbl 3 "Self-only plan", add
 label define now_milftyp2_lbl 1 "Family Plan", add
 label define now_milftyp2_lbl 0 "Out of universe", add
 label define fspouidx_lbl 0 "No spouse", add
-label define fspouidx_lbl min "1", add
-label define fspouidx_lbl max "39", add
-label define fspouidx_lbl description "Range", add
 label define prhernal_lbl 1 "Allocated", add
 label define prhernal_lbl 0 "No change or children or armed forces", add
 label define i_dirout_lbl 1 "Hotdeck imputation", add
@@ -1487,16 +1436,10 @@ label define i_dirout_lbl 0 "Reported", add
 label define i_dirout_lbl -1 "Out of Universe", add
 label define i_dirout_lbl 3 "Whole unit imputation", add
 label define hwsval_lbl 0 "None or not in universe", add
-label define hwsval_lbl min "1", add
-label define hwsval_lbl max "3899961", add
-label define hwsval_lbl description "Range", add
 label define mrkftyp2_lbl 2 "Self plus one", add
 label define mrkftyp2_lbl 3 "Self-only plan", add
 label define mrkftyp2_lbl 1 "Family Plan", add
 label define mrkftyp2_lbl 0 "Out of universe", add
-label define fmed_val_lbl min "0", add
-label define fmed_val_lbl max "9999999", add
-label define fmed_val_lbl description "0:9999999", add
 label define finc_ann_lbl 2 "No", add
 label define finc_ann_lbl 1 "Yes", add
 label define h_month_lbl 3 "March", add
@@ -1555,9 +1498,6 @@ label define priv_cyr_lbl 3 "Covered all of last year", add
 label define pewnelig1_lbl 2 "No", add
 label define pewnelig1_lbl 1 "Yes", add
 label define pewnelig1_lbl 0 "Out of universe", add
-label define f_mv_fs_lbl min "0", add
-label define f_mv_fs_lbl max "99999", add
-label define f_mv_fs_lbl description "00000:99999", add
 label define i_pewnelig6_lbl 2 "Logical imputation", add
 label define i_pewnelig6_lbl 0 "Reported", add
 label define i_pewnelig6_lbl -1 "Out of Universe", add
@@ -1607,36 +1547,18 @@ label define i_phipval2_lbl 1 "Hotdeck imputation", add
 label define i_phipval2_lbl 0 "Reported", add
 label define i_phipval2_lbl 3 "Whole unit imputation", add
 label define fdisval_lbl 0 "None or not in universe", add
-label define fdisval_lbl min "1", add
-label define fdisval_lbl max "3899961", add
-label define fdisval_lbl description "Range", add
-label define ptotval_lbl min "-99999", add
-label define ptotval_lbl max "99999999", add
-label define ptotval_lbl description "-99999:99999999", add
 label define dis_yn_lbl 1 "Yes", add
 label define dis_yn_lbl 2 "No", add
 label define dis_yn_lbl 0 "Not In Universe", add
 label define milftyp_lbl 1 "Family Plan", add
 label define milftyp_lbl 2 "Self-only plan", add
 label define milftyp_lbl 0 "Out of universe", add
-label define fdstval_lbl min "0", add
-label define fdstval_lbl max "9999999", add
-label define fdstval_lbl description "0:9999999", add
-label define pppos_lbl min "41", add
-label define pppos_lbl max "79", add
-label define pppos_lbl description "Range", add
 label define now_depnonm_lbl 0 "Out of universe", add
 label define now_depnonm_lbl 1 "Yes", add
 label define now_depnonm_lbl 2 "No", add
 label define a_grswk_lbl 0 "Not in univ. or children or Armed Forces", add
-label define a_grswk_lbl min "1", add
-label define a_grswk_lbl max "2885", add
-label define a_grswk_lbl description "Range", add
 label define finc_rnt_lbl 2 "No", add
 label define finc_rnt_lbl 1 "Yes", add
-label define spm_childsuppd_lbl min "0", add
-label define spm_childsuppd_lbl max "99999", add
-label define spm_childsuppd_lbl description "0:99999", add
 label define pxrace1_lbl 50 "Value To Blank", add
 label define pxrace1_lbl 33 "Refused to allocated value long", add
 label define pxrace1_lbl 22 "Don't Know To Longitudinal Value", add
@@ -1661,9 +1583,6 @@ label define pxrace1_lbl 32 "Don't know to allocated value", add
 label define pxrace1_lbl 23 "Refused To Longitudinal Value", add
 label define pxrace1_lbl 3 "Refused - No Change", add
 label define hoival_lbl 0 "None or not in universe", add
-label define hoival_lbl min "1", add
-label define hoival_lbl max "3899961", add
-label define hoival_lbl description "Range", add
 label define i_moop_lbl 0 "Reported", add
 label define i_moop_lbl 3 "Whole unit imputation", add
 label define i_moop_lbl -1 "Out of Universe", add
@@ -1686,9 +1605,6 @@ label define now_depmrk_lbl 0 "Out of universe", add
 label define now_depmrk_lbl 1 "Yes", add
 label define now_depmrk_lbl 2 "No", add
 label define hvetval_lbl 0 "None or not in universe", add
-label define hvetval_lbl min "1", add
-label define hvetval_lbl max "9999999", add
-label define hvetval_lbl description "Range", add
 label define ern_srce_lbl 0 "Not In Universe", add
 label define ern_srce_lbl 2 "Self-employment", add
 label define ern_srce_lbl 1 "Wage and salary", add
@@ -1736,9 +1652,6 @@ label define a_exprrp_lbl 9 "Brother/sister", add
 label define a_exprrp_lbl 11 "Foster child", add
 label define a_exprrp_lbl 1 "Ref per w/relatives in household", add
 label define hfdval_lbl 0 "Not In Universe", add
-label define hfdval_lbl min "1", add
-label define hfdval_lbl max "24999", add
-label define hfdval_lbl description "Range", add
 label define now_mcaid_lbl 2 "No", add
 label define now_mcaid_lbl 1 "Yes", add
 label define now_mrksftyp2_lbl 0 "Out of universe", add
@@ -1757,12 +1670,6 @@ label define owndir_lbl 0 "Out of universe", add
 label define owndir_lbl 2 "No", add
 label define owndir_lbl 1 "Yes", add
 label define hrswk_lbl 0 "Not In Universe", add
-label define hrswk_lbl min "1", add
-label define hrswk_lbl max "99", add
-label define hrswk_lbl description "Range", add
-label define a_lineno_lbl min "1", add
-label define a_lineno_lbl max "39", add
-label define a_lineno_lbl description "Range", add
 label define i_mil_lbl 3 "Whole unit imputation", add
 label define i_mil_lbl 1 "Hotdeck imputation", add
 label define i_mil_lbl 0 "Reported", add
@@ -1787,9 +1694,6 @@ label define mrksftyp2_lbl 1 "Family Plan", add
 label define pehruslt_lbl -1 "Niu-adult civilian", add
 label define pehruslt_lbl 0 "children, Armed Forces, or no hours", add
 label define pehruslt_lbl -4 "Hours Vary", add
-label define pehruslt_lbl min "1", add
-label define pehruslt_lbl max "198", add
-label define pehruslt_lbl description "Range", add
 label define workyn_lbl 1 "Yes", add
 label define workyn_lbl 0 "Not in universe or children", add
 label define workyn_lbl 2 "No", add
@@ -1813,9 +1717,6 @@ label define i_ownpriv_lbl 2 "Logical imputation", add
 label define i_ownpriv_lbl -1 "Out of Universe", add
 label define i_ownpriv_lbl 3 "Whole unit imputation", add
 label define i_ownpriv_lbl 1 "Hotdeck imputation", add
-label define int_val_lbl min "0", add
-label define int_val_lbl max "999999", add
-label define int_val_lbl description "0:999999", add
 label define i_now_mrksout_lbl 3 "Whole unit imputation", add
 label define i_now_mrksout_lbl -1 "Out of Universe", add
 label define i_now_mrksout_lbl 2 "Logical imputation", add
@@ -1830,26 +1731,14 @@ label define outmrks_lbl 2 "No", add
 label define outmrks_lbl 0 "Out of universe", add
 label define outmrks_lbl 1 "Yes", add
 label define hunder18_lbl 0 "None", add
-label define hunder18_lbl min "1", add
-label define hunder18_lbl max "39", add
-label define hunder18_lbl description "Range", add
 label define hunder15_lbl 0 "None", add
-label define hunder15_lbl min "1", add
-label define hunder15_lbl max "39", add
-label define hunder15_lbl description "Range", add
 label define paw_yn_lbl 0 "Not In Universe", add
 label define paw_yn_lbl 1 "Yes", add
 label define paw_yn_lbl 2 "No", add
 label define finc_ws_lbl 1 "Yes", add
 label define finc_ws_lbl 2 "No", add
 label define uc_val_lbl 0 "None or not in universe", add
-label define uc_val_lbl min "1", add
-label define uc_val_lbl max "99999", add
-label define uc_val_lbl description "Range", add
 label define a_wkslk_lbl 0 "Not in univ. or children or Armed Forces", add
-label define a_wkslk_lbl min "1", add
-label define a_wkslk_lbl max "999", add
-label define a_wkslk_lbl description "Range", add
 label define a_werntf_lbl 1 "Suppressed value", add
 label define a_werntf_lbl 0 "Not suppressed", add
 label define h1telhhd_lbl 4 "Allocated", add
@@ -1896,9 +1785,6 @@ label define i_ssval_lbl 11 "Value imputed is less than 25% of total in composit
 label define now_mrkout_lbl 2 "No", add
 label define now_mrkout_lbl 0 "Out of universe", add
 label define now_mrkout_lbl 1 "Yes", add
-label define pemcprem_lbl min "0", add
-label define pemcprem_lbl max "99999", add
-label define pemcprem_lbl description "0:99999", add
 label define pewntake1_lbl 1 "Yes", add
 label define pewntake1_lbl 0 "Out of universe", add
 label define pewntake1_lbl 2 "No", add
@@ -1933,9 +1819,6 @@ label define mrklin1_lbl 20 "Line 20", add
 label define i_ljcw_lbl 9 "Full record imputation (FL_665 ? 1)", add
 label define i_ljcw_lbl 1 "Allocated", add
 label define i_ljcw_lbl 0 "No change", add
-label define ffrval_lbl min "-389961", add
-label define ffrval_lbl max "3899961", add
-label define ffrval_lbl description "Range", add
 label define tax_id_lbl 0 "0:9999999999", add
 label define wkswork_lbl 42 "42 weeks", add
 label define wkswork_lbl 1 "1 week", add
@@ -1990,9 +1873,6 @@ label define wkswork_lbl 8 "8 weeks", add
 label define wkswork_lbl 12 "12 weeks", add
 label define wkswork_lbl 47 "47 weeks", add
 label define wkswork_lbl 13 "13 weeks", add
-label define spm_fedtaxbc_lbl min "-999999", add
-label define spm_fedtaxbc_lbl max "9999999", add
-label define spm_fedtaxbc_lbl description "-999999:9999999", add
 label define i_now_grpout_lbl -1 "Out of Universe", add
 label define i_now_grpout_lbl 3 "Whole unit imputation", add
 label define i_now_grpout_lbl 0 "Reported", add
@@ -2067,9 +1947,6 @@ label define outgrp_lbl 1 "Yes", add
 label define outgrp_lbl 2 "No", add
 label define outgrp_lbl 0 "Out of universe", add
 label define fssival_lbl 0 "None", add
-label define fssival_lbl min "1", add
-label define fssival_lbl max "389961", add
-label define fssival_lbl description "Range", add
 label define fpersons_lbl 12 "12", add
 label define fpersons_lbl 2 "2", add
 label define fpersons_lbl 4 "4", add
@@ -2154,15 +2031,9 @@ label define i_now_depdir_lbl 1 "Hotdeck imputation", add
 label define i_now_depdir_lbl 0 "Reported", add
 label define i_now_depdir_lbl -1 "Out of Universe", add
 label define i_now_depdir_lbl 2 "Logical imputation", add
-label define frse_val_lbl min "-99999", add
-label define frse_val_lbl max "9999999", add
-label define frse_val_lbl description "Range", add
 label define i_hfdval_lbl 1 "Allocated", add
 label define i_hfdval_lbl 2 "Allocated with range response", add
 label define i_hfdval_lbl 0 "No allocation", add
-label define hrntval_lbl min "-389961", add
-label define hrntval_lbl max "3899961", add
-label define hrntval_lbl description "Range", add
 label define i_wcval_lbl 5 "Level 102 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_wcval_lbl 4 "Level 101 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_wcval_lbl 3 "Level 3 statistical match (value with ranges)", add
@@ -2411,9 +2282,6 @@ label define i_caid_lbl 0 "Reported", add
 label define mrkftyp_lbl 1 "Family Plan", add
 label define mrkftyp_lbl 2 "Self-only plan", add
 label define mrkftyp_lbl 0 "Out of universe", add
-label define spm_weight_lbl min "9999", add
-label define spm_weight_lbl max "9999999", add
-label define spm_weight_lbl description "9999:9999999", add
 label define hengast_lbl 2 "No", add
 label define hengast_lbl 0 "Not In Universe", add
 label define hengast_lbl 1 "Yes", add
@@ -2452,9 +2320,6 @@ label define i_ernval_lbl 3 "Level 3 statistical match (value with ranges)", add
 label define i_ernval_lbl 0 "No allocation", add
 label define i_ernval_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_ernval_lbl 7 "Level 104 statistical match (age, sex)", add
-label define ph_seq_lbl min "1", add
-label define ph_seq_lbl max "99999", add
-label define ph_seq_lbl description "Range", add
 label define peioind_lbl 1470 "MFG-FIBER, YARN, AND THREAD MILLS", add
 label define peioind_lbl 6680 "INF-WIRED TELECOMMUNICATIONS CARRIERS", add
 label define peioind_lbl 4560 "WHL-ALCOHOLIC BEVERAGES MERCHANT WHOLESALERS", add
@@ -2726,9 +2591,6 @@ label define dst_sc2_lbl 1 "401k account", add
 label define dst_sc2_lbl 5 "KEOGH plan", add
 label define dst_sc2_lbl 3 "Roth IRA", add
 label define dst_sc2_lbl 6 "SEP plan (Simplified Employee Pension)", add
-label define h_mis_lbl min "1", add
-label define h_mis_lbl max "8", add
-label define h_mis_lbl description "Range", add
 label define i_pensc1_lbl 1 "Allocated", add
 label define i_pensc1_lbl 9 "Full record imputation (FL_665 ? 1)", add
 label define i_pensc1_lbl 0 "No change", add
@@ -2747,9 +2609,6 @@ label define i_now_pchip_lbl 2 "Logical imputation", add
 label define i_now_pchip_lbl 1 "Hotdeck imputation", add
 label define i_now_pchip_lbl 3 "Whole unit imputation", add
 label define i_now_pchip_lbl 0 "Reported", add
-label define moop2_lbl min "0", add
-label define moop2_lbl max "9999999", add
-label define moop2_lbl description "0:9999999", add
 label define nwlook_lbl 1 "Yes", add
 label define nwlook_lbl 0 "Not in universe or children", add
 label define nwlook_lbl 2 "No", add
@@ -2769,9 +2628,6 @@ label define i_now_ownpriv_lbl 1 "Hotdeck imputation", add
 label define i_now_ownpriv_lbl -1 "Out of Universe", add
 label define i_now_ownpriv_lbl 3 "Whole unit imputation", add
 label define eit_cred_lbl 0 "None", add
-label define eit_cred_lbl min "1", add
-label define eit_cred_lbl max "9999", add
-label define eit_cred_lbl description "Range", add
 label define h_typebc_lbl 15 "Merged", add
 label define h_typebc_lbl 16 "Condemned", add
 label define h_typebc_lbl 8 "Unocc tent or trailer site", add
@@ -2808,9 +2664,6 @@ label define spm_famtype_lbl 5 "Unrelated individuals", add
 label define spm_famtype_lbl 1 "Married couple family", add
 label define spm_famtype_lbl 2 "Cohabiting partner", add
 label define f_mv_sl_lbl 0 "None", add
-label define f_mv_sl_lbl min "1", add
-label define f_mv_sl_lbl max "9999", add
-label define f_mv_sl_lbl description "Range", add
 label define resnssia_lbl 8 "Level 105 statistical match (all donors can match to all recipients)", add
 label define resnssia_lbl 4 "Level 101 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define resnssia_lbl 2 "Level 2 statistical match (value with ranges)", add
@@ -2842,12 +2695,6 @@ label define mrkslin1_lbl 11 "Line 11", add
 label define mrkslin1_lbl 16 "Line 16", add
 label define mrkslin1_lbl 13 "Line 13", add
 label define mrkslin1_lbl 7 "Line 7", add
-label define se_val_lbl min "-99999", add
-label define se_val_lbl max "999999", add
-label define se_val_lbl description "Range", add
-label define rint_val2_lbl min "0", add
-label define rint_val2_lbl max "999999", add
-label define rint_val2_lbl description "0:999999", add
 label define i_penyn_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_penyn_lbl 4 "Level 101 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_penyn_lbl 1 "Level 1 statistical match (value with ranges)", add
@@ -2858,20 +2705,11 @@ label define i_penyn_lbl 8 "Level 105 statistical match (all donors can match to
 label define i_penyn_lbl 0 "No allocation", add
 label define i_penyn_lbl 7 "Level 104 statistical match (age, sex)", add
 label define i_penyn_lbl 5 "Level 102 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
-label define rint_val1_lbl min "0", add
-label define rint_val1_lbl max "999999", add
-label define rint_val1_lbl description "0:999999", add
-label define hearnval_lbl min "-389961", add
-label define hearnval_lbl max "11699883", add
-label define hearnval_lbl description "Range", add
 label define a_enrlw_lbl 0 "Not in univ. or children & Armed Forces", add
 label define a_enrlw_lbl 2 "No", add
 label define a_enrlw_lbl 1 "Yes", add
 label define now_mcare_lbl 2 "No", add
 label define now_mcare_lbl 1 "Yes", add
-label define dsab_val_lbl min "0", add
-label define dsab_val_lbl max "999999", add
-label define dsab_val_lbl description "0:999999", add
 label define i_now_owndir_lbl -1 "Out of Universe", add
 label define i_now_owndir_lbl 0 "Reported", add
 label define i_now_owndir_lbl 3 "Whole unit imputation", add
@@ -2934,9 +2772,6 @@ label define i_mrkunout_lbl 1 "Hotdeck imputation", add
 label define i_mrkunout_lbl 3 "Whole unit imputation", add
 label define i_mrkunout_lbl 2 "Logical imputation", add
 label define gtco_lbl 000 "Not Identified", add
-label define gtco_lbl min "1", add
-label define gtco_lbl max "810", add
-label define gtco_lbl description "Specific County Code", add
 label define hdis_yn_lbl 2 "No", add
 label define hdis_yn_lbl 0 "Not In Universe", add
 label define hdis_yn_lbl 1 "Yes", add
@@ -2987,18 +2822,9 @@ label define ljcw_lbl 4 "Local", add
 label define finc_vet_lbl 1 "Yes", add
 label define finc_vet_lbl 2 "No", add
 label define csp_val_lbl 0 "None or not in universe", add
-label define csp_val_lbl min "1", add
-label define csp_val_lbl max "99999", add
-label define csp_val_lbl description "Range", add
-label define fedtax_ac_lbl min "-99999", add
-label define fedtax_ac_lbl max "9999999", add
-label define fedtax_ac_lbl description "Dollar amount", add
 label define i_ssyn_lbl 0 "No allocation", add
 label define i_ssyn_lbl 10 "Some of the components are imputed", add
 label define i_ssyn_lbl 11 "All of the components imputed", add
-label define fothval_lbl min "-389961", add
-label define fothval_lbl max "11699883", add
-label define fothval_lbl description "Range", add
 label define oed_typ1_lbl 2 "No", add
 label define oed_typ1_lbl 1 "Yes", add
 label define oed_typ1_lbl 0 "Not In Universe", add
@@ -3119,9 +2945,6 @@ label define mig_cbst_lbl 2 "non-CBSA", add
 label define mig_cbst_lbl 3 "Abroad", add
 label define mig_cbst_lbl 4 "Not Identifiable", add
 label define mig_cbst_lbl 1 "CBSA", add
-label define fwsval_lbl min "0", add
-label define fwsval_lbl max "3899961", add
-label define fwsval_lbl description "Range", add
 label define i_now_ownmrkun_lbl 1 "Hotdeck imputation", add
 label define i_now_ownmrkun_lbl 0 "Reported", add
 label define i_now_ownmrkun_lbl -1 "Out of Universe", add
@@ -3198,16 +3021,10 @@ label define pedisear_lbl 1 "Yes", add
 label define pedisear_lbl 2 "No", add
 label define i_hfoodn_lbl 1 "Allocated", add
 label define i_hfoodn_lbl 0 "No change", add
-label define ctc_crd_lbl min "0", add
-label define ctc_crd_lbl max "99999", add
-label define ctc_crd_lbl description "0:99999", add
 label define i_hfoodm_lbl 2 "Allocated with range response", add
 label define i_hfoodm_lbl 1 "Allocated", add
 label define i_hfoodm_lbl 0 "No allocation", add
 label define srvs_val_lbl 0 "None or not in universe", add
-label define srvs_val_lbl min "1", add
-label define srvs_val_lbl max "199998", add
-label define srvs_val_lbl description "Range", add
 label define i_hfoods_lbl 1 "Allocated", add
 label define i_hfoods_lbl 0 "No change", add
 label define now_mrkunftyp_lbl 1 "Family Plan", add
@@ -3240,9 +3057,6 @@ label define pxafever_lbl 40 "Value To Allocated Value", add
 label define pxafever_lbl 50 "Value To Blank", add
 label define pxafever_lbl 33 "Refused to Allocated Value Long.", add
 label define pxafever_lbl 22 "Don't Know To Longitudinal Value", add
-label define spm_capwkccxpns_lbl min "0", add
-label define spm_capwkccxpns_lbl max "999999", add
-label define spm_capwkccxpns_lbl description "0:999999", add
 label define i_now_outgrp_lbl 2 "Logical imputation", add
 label define i_now_outgrp_lbl 1 "Hotdeck imputation", add
 label define i_now_outgrp_lbl 0 "Reported", add
@@ -3269,19 +3083,10 @@ label define i_ownmrk_lbl 3 "Whole unit imputation", add
 label define i_ownmrk_lbl 0 "Reported", add
 label define i_ownmrk_lbl -1 "Out of Universe", add
 label define i_ownmrk_lbl 1 "Hotdeck imputation", add
-label define dst_val2_yng_lbl min "0", add
-label define dst_val2_yng_lbl max "999999", add
-label define dst_val2_yng_lbl description "0:999999", add
 label define hpaw_yn_lbl 1 "Yes", add
 label define hpaw_yn_lbl 0 "Not In Universe", add
 label define hpaw_yn_lbl 2 "No", add
 label define hnumfam_lbl 0 "Noninterview household", add
-label define hnumfam_lbl min "1", add
-label define hnumfam_lbl max "39", add
-label define hnumfam_lbl description "Range", add
-label define spm_sttax_lbl min "-9999", add
-label define spm_sttax_lbl max "999999", add
-label define spm_sttax_lbl description "-9999:999999", add
 label define i_fhipval2_lbl -1 "Out of Universe", add
 label define i_fhipval2_lbl 2 "Logical imputation", add
 label define i_fhipval2_lbl 3 "Whole unit imputation", add
@@ -3310,9 +3115,6 @@ label define a_wkstat_lbl 4 "PT/non-ec rea,us PT", add
 label define a_wkstat_lbl 3 "PT/econ rea,us FT", add
 label define a_wkstat_lbl 7 "Unemployed PT", add
 label define a_wkstat_lbl 0 "Not In Universe", add
-label define dst_val1_yng_lbl min "0", add
-label define dst_val1_yng_lbl max "999999", add
-label define dst_val1_yng_lbl description "0:999999", add
 label define tphip_val2_lbl 0 "Not Topcoded", add
 label define tphip_val2_lbl 1 "Topcoded", add
 label define phmemprs_lbl 3 "3 plus", add
@@ -3322,12 +3124,6 @@ label define phmemprs_lbl 2 "2", add
 label define now_owndir_lbl 1 "Yes", add
 label define now_owndir_lbl 2 "No", add
 label define now_owndir_lbl 0 "Out of universe", add
-label define statetax_a_lbl min "-9999", add
-label define statetax_a_lbl max "999999", add
-label define statetax_a_lbl description "-9999:999999", add
-label define statetax_b_lbl min "0", add
-label define statetax_b_lbl max "9999999", add
-label define statetax_b_lbl description "Range", add
 label define fpctcut_lbl 18 "Eighteenth 5 percent", add
 label define fpctcut_lbl 8 "Eighth 5 percent", add
 label define fpctcut_lbl 16 "Sixteenth 5 percent", add
@@ -3349,23 +3145,8 @@ label define fpctcut_lbl 3 "Third 5 percent", add
 label define fpctcut_lbl 19 "Nineteenth 5 percent", add
 label define fpctcut_lbl 15 "Fifteenth 5 percent", add
 label define fpctcut_lbl 14 "Fourteenth 5 percent", add
-label define ed_val_lbl min "0", add
-label define ed_val_lbl max "999999", add
-label define ed_val_lbl description "Dollar amount", add
-label define spm_wicval_lbl min "0", add
-label define spm_wicval_lbl max "9999", add
-label define spm_wicval_lbl description "0000:9999", add
 label define now_mrks_lbl 2 "No", add
 label define now_mrks_lbl 1 "Yes", add
-label define flastidx_lbl min "1", add
-label define flastidx_lbl max "39", add
-label define flastidx_lbl description "Range", add
-label define hprop_val_lbl min "0", add
-label define hprop_val_lbl max "99999999", add
-label define hprop_val_lbl description "0:99999999", add
-label define pmed_val_lbl min "0", add
-label define pmed_val_lbl max "999999", add
-label define pmed_val_lbl description "0:999999", add
 label define csp_yn_lbl 1 "Yes", add
 label define csp_yn_lbl 0 "Not In Universe", add
 label define csp_yn_lbl 2 "No", add
@@ -3393,9 +3174,6 @@ label define weind_lbl 12 "Real estate and rental and leasing", add
 label define weind_lbl 18 "Accommodations and Food services", add
 label define weind_lbl 11 "Finance and insurance", add
 label define weind_lbl 1 "Agriculture, forestry, fishing, and hunting", add
-label define fmoop2_lbl min "0", add
-label define fmoop2_lbl max "9999999", add
-label define fmoop2_lbl description "0:9999999", add
 label define a_lfsr_lbl 4 "Unemp,on layoff", add
 label define a_lfsr_lbl 1 "Working", add
 label define a_lfsr_lbl 0 "Not In Universe", add
@@ -3403,9 +3181,6 @@ label define a_lfsr_lbl 2 "W/job,not at work", add
 label define a_lfsr_lbl 3 "Unemp,looking for work", add
 label define a_lfsr_lbl 7 "Not in labor force", add
 label define hintval_lbl 0 "None or not in universe", add
-label define hintval_lbl min "1", add
-label define hintval_lbl max "3899961", add
-label define hintval_lbl description "Range", add
 label define gereg_lbl 2 "Midwest", add
 label define gereg_lbl 1 "Northeast", add
 label define gereg_lbl 3 "South", add
@@ -3421,15 +3196,9 @@ label define i_cspyn_lbl 4 "Level 101 statistical match (value without ranges, r
 label define i_cspyn_lbl 3 "Level 3 statistical match (value with ranges)", add
 label define i_cspyn_lbl 2 "Level 2 statistical match (value with ranges)", add
 label define fcspval_lbl 0 "None or not in universe", add
-label define fcspval_lbl min "1", add
-label define fcspval_lbl max "3899961", add
-label define fcspval_lbl description "Range", add
 label define finc_int_lbl 2 "No", add
 label define finc_int_lbl 1 "Yes", add
 label define hrnumwic_lbl 0 "Niu", add
-label define hrnumwic_lbl min "1", add
-label define hrnumwic_lbl max "16", add
-label define hrnumwic_lbl description "Number of people", add
 label define now_depmrkun_lbl 2 "No", add
 label define now_depmrkun_lbl 0 "Out of universe", add
 label define now_depmrkun_lbl 1 "Yes", add
@@ -3452,36 +3221,18 @@ label define i_pawyn_lbl 0 "No allocation", add
 label define now_outmrkun_lbl 0 "Out of universe", add
 label define now_outmrkun_lbl 1 "Yes", add
 label define now_outmrkun_lbl 2 "No", add
-label define pothval_lbl min "-99999", add
-label define pothval_lbl max "99999999", add
-label define pothval_lbl description "-99999:99999999", add
-label define spm_numkids_lbl min "0", add
-label define spm_numkids_lbl max "20", add
-label define spm_numkids_lbl description "0:20", add
 label define pub_cyr_lbl 3 "Covered all of last year", add
 label define pub_cyr_lbl 0 "Infant born after calendar year", add
 label define pub_cyr_lbl 2 "Covered some of last year", add
 label define pub_cyr_lbl 1 "Covered none of last year", add
 label define axhrlywk_lbl 0 "No change or children or armed forces", add
 label define axhrlywk_lbl 4 "Allocated", add
-label define dis_val2_lbl min "0", add
-label define dis_val2_lbl max "999999", add
-label define dis_val2_lbl description "0:999999", add
-label define dis_val1_lbl min "0", add
-label define dis_val1_lbl max "999999", add
-label define dis_val1_lbl description "0:999999", add
 label define hsur_yn_lbl 1 "Yes", add
 label define hsur_yn_lbl 0 "Not In Universe", add
 label define hsur_yn_lbl 2 "No", add
-label define pf_seq_lbl min "1", add
-label define pf_seq_lbl max "39", add
-label define pf_seq_lbl description "Range", add
 label define outmrk_lbl 0 "Out of universe", add
 label define outmrk_lbl 2 "No", add
 label define outmrk_lbl 1 "Yes", add
-label define spm_fica_lbl min "0", add
-label define spm_fica_lbl max "99999", add
-label define spm_fica_lbl description "0:99999", add
 label define now_ownnonm_lbl 2 "No", add
 label define now_ownnonm_lbl 1 "Yes", add
 label define now_ownnonm_lbl 0 "Out of universe", add
@@ -3527,9 +3278,6 @@ label define i_fmoop_lbl 0 "Reported", add
 label define i_fmoop_lbl -1 "Out of Universe", add
 label define axsex_lbl 4 "Allocated", add
 label define axsex_lbl 0 "No change", add
-label define phf_seq_lbl min "1", add
-label define phf_seq_lbl max "39", add
-label define phf_seq_lbl description "Range", add
 label define pedisrem_lbl -1 "Not in Universe", add
 label define pedisrem_lbl 2 "No", add
 label define pedisrem_lbl 1 "Yes", add
@@ -3539,18 +3287,9 @@ label define hvet_yn_lbl 0 "Not In Universe", add
 label define fkind_lbl 3 "Female Reference Person", add
 label define fkind_lbl 2 "Male Reference Person", add
 label define fkind_lbl 1 "Married couple family", add
-label define moop_lbl min "0", add
-label define moop_lbl max "9999999", add
-label define moop_lbl description "0:9999999", add
 label define mrkunout_lbl 1 "Yes", add
 label define mrkunout_lbl 2 "No", add
 label define mrkunout_lbl 0 "Out of universe", add
-label define spm_fedtax_lbl min "-999999", add
-label define spm_fedtax_lbl max "9999999", add
-label define spm_fedtax_lbl description "-999999:9999999", add
-label define trdint_val_lbl min "0", add
-label define trdint_val_lbl max "99999", add
-label define trdint_val_lbl description "0:99999", add
 label define wrk_ck_lbl 2 "No", add
 label define wrk_ck_lbl 1 "Yes", add
 label define wrk_ck_lbl 0 "Not In Universe", add
@@ -3585,9 +3324,6 @@ label define welknw_lbl 7 "Workers", add
 label define welknw_lbl 1 "None (not looking for work)", add
 label define welknw_lbl 5 "27 to 39 weeks looking", add
 label define welknw_lbl 6 "40 or more weeks looking", add
-label define hothval_lbl min "-389961", add
-label define hothval_lbl max "11699883", add
-label define hothval_lbl description "Range", add
 label define noemp_lbl 6 "1000+", add
 label define noemp_lbl 0 "Not In Universe", add
 label define noemp_lbl 3 "50 - 99", add
@@ -3605,9 +3341,6 @@ label define frelu18_lbl 3 "3", add
 label define frelu18_lbl 6 "6", add
 label define frelu18_lbl 5 "5", add
 label define frelu18_lbl 7 "7", add
-label define spm_wkxpns_lbl min "0", add
-label define spm_wkxpns_lbl max "99999", add
-label define spm_wkxpns_lbl description "0:99999", add
 label define i_now_mrkunout_lbl -1 "Out of Universe", add
 label define i_now_mrkunout_lbl 3 "Whole unit imputation", add
 label define i_now_mrkunout_lbl 1 "Hotdeck imputation", add
@@ -3615,9 +3348,6 @@ label define i_now_mrkunout_lbl 0 "Reported", add
 label define i_now_mrkunout_lbl 2 "Logical imputation", add
 label define finc_fr_lbl 1 "Yes", add
 label define finc_fr_lbl 2 "No", add
-label define p_seq_lbl min "0", add
-label define p_seq_lbl max "16", add
-label define p_seq_lbl description "00:16", add
 label define prptrea_lbl 8 "USL FT-other fam/pers obligations", add
 label define prptrea_lbl -1 "NIU - adult civilian", add
 label define prptrea_lbl 11 "USL FT-school/training", add
@@ -3694,9 +3424,6 @@ label define axhrs_lbl 0 "No change or children or armed forces", add
 label define axhrs_lbl 4 "Allocated", add
 label define finc_paw_lbl 2 "No", add
 label define finc_paw_lbl 1 "Yes", add
-label define fin_val_lbl min "0", add
-label define fin_val_lbl max "999999", add
-label define fin_val_lbl description "0:999999", add
 label define peafwhn1_lbl 7 "January 1947 to June 1950", add
 label define peafwhn1_lbl 5 "February 1955 to July 1964", add
 label define peafwhn1_lbl 3 "May 1975 to July 1990", add
@@ -3728,18 +3455,12 @@ label define i_now_depmrks_lbl 2 "Logical imputation", add
 label define i_now_depmrks_lbl 0 "Reported", add
 label define i_now_depmrks_lbl 1 "Hotdeck imputation", add
 label define fintval_lbl 0 "None or not in universe", add
-label define fintval_lbl min "1", add
-label define fintval_lbl max "3899961", add
-label define fintval_lbl description "Range", add
 label define i_ownmrkun_lbl 0 "Reported", add
 label define i_ownmrkun_lbl 3 "Whole unit imputation", add
 label define i_ownmrkun_lbl -1 "Out of Universe", add
 label define i_ownmrkun_lbl 2 "Logical imputation", add
 label define i_ownmrkun_lbl 1 "Hotdeck imputation", add
 label define dep_stat_lbl 0 "Not a dependent", add
-label define dep_stat_lbl min "1", add
-label define dep_stat_lbl max "39", add
-label define dep_stat_lbl description "Range", add
 label define ptweeks_lbl 0 "Not In Universe", add
 label define ptweeks_lbl 3 "3 weeks", add
 label define ptweeks_lbl 37 "37 weeks", add
@@ -3918,13 +3639,7 @@ label define pxrrp_lbl 20 "Value To Longitudinal Value", add
 label define pxrrp_lbl 10 "Value To Value", add
 label define pxrrp_lbl -1 "Not allocated", add
 label define a_spouse_lbl 0 "None Or Children", add
-label define a_spouse_lbl min "1", add
-label define a_spouse_lbl max "39", add
-label define a_spouse_lbl description "Range", add
 label define fdivval_lbl 0 "None or not in universe", add
-label define fdivval_lbl min "1", add
-label define fdivval_lbl max "3899961", add
-label define fdivval_lbl description "Range", add
 label define pemntvty_lbl 248 "Yemen", add
 label define pemntvty_lbl 400 "Algeria", add
 label define pemntvty_lbl 313 "Guatemala", add
@@ -4105,12 +3820,6 @@ label define hunits_lbl 5 "10+ Units", add
 label define hunits_lbl 2 "2 Units", add
 label define hunits_lbl 4 "5 - 9 Units", add
 label define hunits_lbl 1 "1Unit", add
-label define hseval_lbl min "-389961", add
-label define hseval_lbl max "3899961", add
-label define hseval_lbl description "Range", add
-label define spm_povthreshold_lbl min "0", add
-label define spm_povthreshold_lbl max "99999", add
-label define spm_povthreshold_lbl description "00000:99999", add
 label define penatvty_lbl 440 "Nigeria", add
 label define penatvty_lbl 066 "Guam", add
 label define penatvty_lbl 069 "Northern Marianas", add
@@ -4305,17 +4014,11 @@ label define i_now_depmil_lbl -1 "Out of Universe", add
 label define i_now_depmil_lbl 1 "Hotdeck imputation", add
 label define i_now_depmil_lbl 2 "Logical imputation", add
 label define i_now_depmil_lbl 3 "Whole unit imputation", add
-label define fmoop_lbl min "0", add
-label define fmoop_lbl max "9999999", add
-label define fmoop_lbl description "0:9999999", add
 label define i_now_nonmout_lbl 0 "Reported", add
 label define i_now_nonmout_lbl 1 "Hotdeck imputation", add
 label define i_now_nonmout_lbl -1 "Out of Universe", add
 label define i_now_nonmout_lbl 2 "Logical imputation", add
 label define i_now_nonmout_lbl 3 "Whole unit imputation", add
-label define fedtax_bc_lbl min "0", add
-label define fedtax_bc_lbl max "9999999", add
-label define fedtax_bc_lbl description "Range", add
 label define i_ptyn_lbl 9 "Full record imputation (FL_665 ? 1)", add
 label define i_ptyn_lbl 0 "No change", add
 label define i_ptyn_lbl 1 "Allocated", add
@@ -4404,9 +4107,6 @@ label define vet_typ3_lbl 1 "Yes", add
 label define vet_typ3_lbl 0 "Niu", add
 label define vet_typ3_lbl 2 "No", add
 label define hdivval_lbl 0 "None or not in universe", add
-label define hdivval_lbl min "1", add
-label define hdivval_lbl max "3899961", add
-label define hdivval_lbl description "Range", add
 label define vet_typ4_lbl 1 "Yes", add
 label define vet_typ4_lbl 0 "Niu", add
 label define vet_typ4_lbl 2 "No", add
@@ -4672,9 +4372,6 @@ label define i_grp_lbl 3 "Whole unit imputation", add
 label define i_grp_lbl 0 "Reported", add
 label define i_grp_lbl -1 "Infant born after calendar year", add
 label define i_grp_lbl 2 "Logical imputation", add
-label define fhip_val2_lbl min "0", add
-label define fhip_val2_lbl max "9999999", add
-label define fhip_val2_lbl description "0:9999999", add
 label define i_now_othmt_lbl 0 "Reported", add
 label define i_now_othmt_lbl 2 "Logical imputation", add
 label define i_now_othmt_lbl 3 "Whole unit imputation", add
@@ -4706,12 +4403,6 @@ label define nonmlin1_lbl 6 "Line 6", add
 label define i_wctyp_lbl 9 "Full record imputation (FL_665 ? 1)", add
 label define i_wctyp_lbl 0 "No change", add
 label define i_wctyp_lbl 1 "Allocated", add
-label define pnsn_val_lbl min "0", add
-label define pnsn_val_lbl max "9999999", add
-label define pnsn_val_lbl description "0:9999999", add
-label define hdstval_lbl min "0", add
-label define hdstval_lbl max "9999999", add
-label define hdstval_lbl description "0:9999999", add
 label define dirftyp_lbl 2 "Self-only plan", add
 label define dirftyp_lbl 0 "Out of universe", add
 label define dirftyp_lbl 1 "Family Plan", add
@@ -4728,12 +4419,6 @@ label define fownu6_lbl 0 "None, not in universe", add
 label define fownu6_lbl 5 "5", add
 label define fownu6_lbl 1 "1", add
 label define fownu6_lbl 4 "4", add
-label define oi_val_lbl min "0", add
-label define oi_val_lbl max "999999", add
-label define oi_val_lbl description "0:999999", add
-label define chsp_val_lbl min "0", add
-label define chsp_val_lbl max "99999", add
-label define chsp_val_lbl description "0:99999", add
 label define owngrp_lbl 1 "Yes", add
 label define owngrp_lbl 0 "Out of universe", add
 label define owngrp_lbl 2 "No", add
@@ -4755,20 +4440,8 @@ label define gtcbsast_lbl 2 "Balance Metropolitan", add
 label define gtcbsast_lbl 1 "Principal City", add
 label define gtcbsast_lbl 4 "Not Identified", add
 label define gtindvpc_lbl 0 "Not Identified, Nonmetropolitan, or Not in an identified Principal City", add
-label define gtindvpc_lbl min "1", add
-label define gtindvpc_lbl max "7", add
-label define gtindvpc_lbl description "Specific City Code", add
 label define pecohab_lbl -1 "No Partner Present", add
-label define pecohab_lbl min "1", add
-label define pecohab_lbl max "99", add
-label define pecohab_lbl description "Line number", add
 label define fssval_lbl 0 "None or not in universe", add
-label define fssval_lbl min "1", add
-label define fssval_lbl max "1169961", add
-label define fssval_lbl description "Range", add
-label define phip_val2_lbl min "0", add
-label define phip_val2_lbl max "999999", add
-label define phip_val2_lbl description "0:999999", add
 label define i_owngrp_lbl 2 "Logical imputation", add
 label define i_owngrp_lbl -1 "Out of Universe", add
 label define i_owngrp_lbl 3 "Whole unit imputation", add
@@ -4790,9 +4463,6 @@ label define i_othmt_lbl 1 "Hotdeck imputation", add
 label define i_othmt_lbl 3 "Whole unit imputation", add
 label define i_othmt_lbl -1 "Infant born after calendar year", add
 label define hh5to18_lbl 0 "None", add
-label define hh5to18_lbl min "1", add
-label define hh5to18_lbl max "39", add
-label define hh5to18_lbl description "Range", add
 label define i_ownmrks_lbl 1 "Hotdeck imputation", add
 label define i_ownmrks_lbl 3 "Whole unit imputation", add
 label define i_ownmrks_lbl 2 "Logical imputation", add
@@ -4802,9 +4472,6 @@ label define ptyn_lbl 1 "Yes", add
 label define ptyn_lbl 0 "Not In Universe", add
 label define ptyn_lbl 2 "No", add
 label define a_hrspay_lbl 0 "Not in univ. or children & Armed Forces", add
-label define a_hrspay_lbl min "1", add
-label define a_hrspay_lbl max "9999", add
-label define a_hrspay_lbl description "Range", add
 label define pxfntvty_lbl 12 "Don't Know To Value", add
 label define pxfntvty_lbl -1 "Not in Universe", add
 label define pxfntvty_lbl 20 "Value To Longitudinal Value", add
@@ -4835,9 +4502,6 @@ label define i_nwlkwk_lbl 9 "Full record imputation (FL_665 ? 1)", add
 label define a_ftlf_lbl 0 "Not In Universe", add
 label define a_ftlf_lbl 1 "Full time labor force", add
 label define fica_lbl 0 "None", add
-label define fica_lbl min "1", add
-label define fica_lbl max "99999", add
-label define fica_lbl description "1:99999", add
 label define thprop_val_lbl 0 "No swapping", add
 label define thprop_val_lbl 1 "Swapped with another", add
 label define i_intyn_lbl 10 "Some of the components are imputed", add
@@ -5072,13 +4736,7 @@ label define i_capval_lbl 7 "Level 104 statistical match (age, sex)", add
 label define i_capval_lbl 5 "Level 102 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_capval_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_capval_lbl 1 "Level 1 statistical match (value with ranges)", add
-label define fheadidx_lbl min "1", add
-label define fheadidx_lbl max "39", add
-label define fheadidx_lbl description "Range", add
 label define fwcval_lbl 0 "None or not in universe", add
-label define fwcval_lbl min "1", add
-label define fwcval_lbl max "3899961", add
-label define fwcval_lbl description "Range", add
 label define i_dstval2comp_lbl 0 "No allocation", add
 label define i_dstval2comp_lbl 10 "Some of the components are imputed", add
 label define i_dstval2comp_lbl 11 "All of the components imputed", add
@@ -5108,9 +4766,6 @@ label define trnt_val_lbl 0 "Not Topcoded", add
 label define int_yn_lbl 1 "Yes", add
 label define int_yn_lbl 0 "Not In Universe", add
 label define int_yn_lbl 2 "No", add
-label define hpenval_lbl min "0", add
-label define hpenval_lbl max "9999999", add
-label define hpenval_lbl description "0:9999999", add
 label define nonmftyp_lbl 1 "Family Plan", add
 label define nonmftyp_lbl 0 "Out of universe", add
 label define nonmftyp_lbl 2 "Self-only plan", add
@@ -5125,9 +4780,6 @@ label define hinc_wc_lbl 1 "Yes", add
 label define hinc_wc_lbl 0 "Not In Universe", add
 label define hinc_wc_lbl 2 "No", add
 label define fvetval_lbl 0 "None or not in universe", add
-label define fvetval_lbl min "1", add
-label define fvetval_lbl max "1169961", add
-label define fvetval_lbl description "Range", add
 label define i_nonmout_lbl -1 "Out of Universe", add
 label define i_nonmout_lbl 3 "Whole unit imputation", add
 label define i_nonmout_lbl 0 "Reported", add
@@ -5138,12 +4790,6 @@ label define i_now_dir_lbl 1 "Hotdeck imputation", add
 label define i_now_dir_lbl 0 "Reported", add
 label define i_now_dir_lbl 2 "Logical imputation", add
 label define div_val_lbl 0 "None or not in universe", add
-label define div_val_lbl min "1", add
-label define div_val_lbl max "999999", add
-label define div_val_lbl description "Range", add
-label define spm_engval_lbl min "0", add
-label define spm_engval_lbl max "10000", add
-label define spm_engval_lbl description "Dollar amount", add
 label define i_dstsc_lbl 9 "Full record imputation (FL_665 ? 1)", add
 label define i_dstsc_lbl 0 "No change", add
 label define i_dstsc_lbl 1 "Allocated", add
@@ -5157,13 +4803,7 @@ label define i_now_outnonm_lbl -1 "Out of Universe", add
 label define i_now_outnonm_lbl 3 "Whole unit imputation", add
 label define i_now_outnonm_lbl 2 "Logical imputation", add
 label define i_now_outnonm_lbl 0 "Reported", add
-label define vet_val_lbl min "0", add
-label define vet_val_lbl max "999999", add
-label define vet_val_lbl description "0:999999", add
 label define hcspval_lbl 0 "None or not in universe", add
-label define hcspval_lbl min "1", add
-label define hcspval_lbl max "3899961", add
-label define hcspval_lbl description "Range", add
 label define i_outmil_lbl 3 "Whole unit imputation", add
 label define i_outmil_lbl 2 "Logical imputation", add
 label define i_outmil_lbl 1 "Hotdeck imputation", add
@@ -5498,9 +5138,6 @@ label define i_wsyn_lbl 5 "Level 102 statistical match (value without ranges, re
 label define i_wsyn_lbl 2 "Level 2 statistical match (value with ranges)", add
 label define i_wsyn_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_wsyn_lbl 4 "Level 101 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
-label define fh_seq_lbl min "1", add
-label define fh_seq_lbl max "99999", add
-label define fh_seq_lbl description "Range", add
 label define i_chcareyn_lbl 4 "Level 101 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_chcareyn_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_chcareyn_lbl 3 "Level 3 statistical match (value with ranges)", add
@@ -5521,9 +5158,6 @@ label define paw_typ_lbl 2 "Other", add
 label define paw_typ_lbl 0 "Not In Universe", add
 label define paw_typ_lbl 1 "Afcd (adc)", add
 label define paw_typ_lbl 3 "Both", add
-label define spm_schlunch_lbl min "0", add
-label define spm_schlunch_lbl max "9999", add
-label define spm_schlunch_lbl description "0000:9999", add
 label define clwk_lbl 1 "Private (includes self-employment, inc.)", add
 label define clwk_lbl 0 "Not In Universe", add
 label define clwk_lbl 4 "Without pay", add
@@ -5554,9 +5188,6 @@ label define pxdisrem_lbl 33 "Refused to Allocated Value Long.", add
 label define pxdisrem_lbl 1 "Blank - No Change", add
 label define pxdisrem_lbl 20 "Value To Longitudinal Value", add
 label define pxdisrem_lbl 50 "Value To Blank", add
-label define agi_lbl min "-999999", add
-label define agi_lbl max "9999999", add
-label define agi_lbl description "Range", add
 label define i_hunits_lbl 0 "Not allocated", add
 label define i_hunits_lbl 1 "Allocated", add
 label define i_outmrks_lbl 3 "Whole unit imputation", add
@@ -6199,9 +5830,6 @@ label define now_outmrk_lbl 0 "Out of universe", add
 label define tdst_val2_yng_lbl 1 "Topcoded", add
 label define tdst_val2_yng_lbl 0 "Not Topcoded", add
 label define h_numper_lbl 0 "Noninterview household", add
-label define h_numper_lbl min "1", add
-label define h_numper_lbl max "39", add
-label define h_numper_lbl description "Range", add
 label define i_disvl2_lbl 2 "Level 2 statistical match (value with ranges)", add
 label define i_disvl2_lbl 5 "Level 102 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_disvl2_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
@@ -6212,13 +5840,7 @@ label define i_disvl2_lbl 0 "No allocation", add
 label define i_disvl2_lbl 9 "FL_665 ? 1 (full record impute)", add
 label define i_disvl2_lbl 8 "Level 105 statistical match (all donors can match to all recipients)", add
 label define i_disvl2_lbl 3 "Level 3 statistical match (value with ranges)", add
-label define hengval_lbl min "0", add
-label define hengval_lbl max "10000", add
-label define hengval_lbl description "Dollar amount", add
 label define hfinval_lbl 0 "None or not in universe", add
-label define hfinval_lbl min "1", add
-label define hfinval_lbl max "3899961", add
-label define hfinval_lbl description "Range", add
 label define i_dishp_lbl 0 "No allocation", add
 label define i_dishp_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_dishp_lbl 3 "Level 3 statistical match (value with ranges)", add
@@ -6234,9 +5856,6 @@ label define i_now_depgrp_lbl 3 "Whole unit imputation", add
 label define i_now_depgrp_lbl -1 "Out of Universe", add
 label define i_now_depgrp_lbl 2 "Logical imputation", add
 label define i_now_depgrp_lbl 1 "Hotdeck imputation", add
-label define actc_crd_lbl min "0", add
-label define actc_crd_lbl max "99999", add
-label define actc_crd_lbl description "Range", add
 label define chsp_yn_lbl 0 "Not In Universe", add
 label define chsp_yn_lbl 2 "No", add
 label define chsp_yn_lbl 1 "Yes", add
@@ -6384,9 +6003,6 @@ label define frse_yn_lbl 1 "Yes", add
 label define a_uslhrs_lbl -4 "Varies", add
 label define a_uslhrs_lbl -1 "Not in universe, or children & Armed Forces", add
 label define a_uslhrs_lbl 0 "No hours", add
-label define a_uslhrs_lbl min "1", add
-label define a_uslhrs_lbl max "99", add
-label define a_uslhrs_lbl description "Hours", add
 label define tann_val_lbl 0 "Not Topcoded", add
 label define tann_val_lbl 1 "Topcoded", add
 label define dirftyp2_lbl 1 "Family Plan", add
@@ -6410,20 +6026,11 @@ label define ed_yn_lbl 1 "Yes", add
 label define ed_yn_lbl 2 "No", add
 label define ed_yn_lbl 0 "Not In Universe", add
 label define h_hhnum_lbl 0 "Blank", add
-label define h_hhnum_lbl min "1", add
-label define h_hhnum_lbl max "8", add
-label define h_hhnum_lbl description "Range", add
 label define cov_lbl 1 "Yes", add
 label define cov_lbl 2 "No", add
 label define cov_lbl 0 "Infant born after calendar year", add
 label define fucval_lbl 0 "None or not in universe", add
-label define fucval_lbl min "1", add
-label define fucval_lbl max "3899961", add
-label define fucval_lbl description "Range", add
 label define ern_val_lbl 0 "None or not in universe", add
-label define ern_val_lbl min "-99999", add
-label define ern_val_lbl max "9999999", add
-label define ern_val_lbl description "Range", add
 label define mig_mtr1_lbl 3 "MSA to NonMSA", add
 label define mig_mtr1_lbl 2 "MSA to MSA", add
 label define mig_mtr1_lbl 9 "Not Identified", add
@@ -6455,9 +6062,6 @@ label define mig_mtr4_lbl 6 "Different State in South", add
 label define mig_mtr4_lbl 5 "Different State in Midwest", add
 label define mig_mtr4_lbl 3 "Different County, Same State", add
 label define mig_mtr4_lbl 8 "Abroad, Foreign country", add
-label define frntval_lbl min "-389961", add
-label define frntval_lbl max "3899961", add
-label define frntval_lbl description "Range", add
 label define i_vetyn_lbl 0 "No allocation", add
 label define i_vetyn_lbl 8 "Level 105 statistical match (all donors can match to all recipients)", add
 label define i_vetyn_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
@@ -6477,12 +6081,6 @@ label define wc_yn_lbl 2 "No", add
 label define i_wtemp_lbl 0 "No change", add
 label define i_wtemp_lbl 1 "Allocated", add
 label define i_wtemp_lbl 9 "Full record imputation (FL_665 ? 1)", add
-label define spm_totval_lbl min "-999999", add
-label define spm_totval_lbl max "9999999", add
-label define spm_totval_lbl description "-999999:9999999", add
-label define frm_val_lbl min "-99999", add
-label define frm_val_lbl max "9999999", add
-label define frm_val_lbl description "Range", add
 label define depgrp_lbl 2 "No", add
 label define depgrp_lbl 0 "Out of universe", add
 label define depgrp_lbl 1 "Yes", add
@@ -6491,9 +6089,6 @@ label define now_hipaid_lbl 2 "employer paid some of premiums", add
 label define now_hipaid_lbl 1 "employer paid all of premiums", add
 label define now_hipaid_lbl 3 "employer paid none of premiums", add
 label define foival_lbl 0 "None or not in universe", add
-label define foival_lbl min "1", add
-label define foival_lbl max "3899961", add
-label define foival_lbl description "Range", add
 label define pxafwhn1_lbl 1 "Blank - No Change", add
 label define pxafwhn1_lbl 33 "Refused to Allocated Value Long.", add
 label define pxafwhn1_lbl 53 "Refused To Blank", add
@@ -6587,14 +6182,8 @@ label define pxdisear_lbl 21 "Blank To Longitudinal Value", add
 label define pxdisear_lbl 10 "Value To Value", add
 label define pxdisear_lbl 42 "Don't Know To Allocated Value", add
 label define pxdisear_lbl 22 "Don't Know To Longitudinal Value", add
-label define retcb_val_lbl min "0", add
-label define retcb_val_lbl max "99999", add
-label define retcb_val_lbl description "0:99999", add
 label define i_hengas_lbl 0 "No change", add
 label define i_hengas_lbl 1 "Allocated", add
-label define hfrval_lbl min "-389961", add
-label define hfrval_lbl max "3899961", add
-label define hfrval_lbl description "Range", add
 label define fl_665_lbl 2 "Some supplement response but not enough for interview", add
 label define fl_665_lbl 0 "Complete nonresponse to supplement", add
 label define fl_665_lbl 3 "Supplement interview but not enough income data", add
@@ -6639,9 +6228,6 @@ label define now_depdir_lbl 0 "Out of universe", add
 label define now_depdir_lbl 1 "Yes", add
 label define now_depdir_lbl 2 "No", add
 label define wsal_val_lbl 0 "None or not in universe", add
-label define wsal_val_lbl min "1", add
-label define wsal_val_lbl max "9999999", add
-label define wsal_val_lbl description "Range", add
 label define pediseye_lbl 1 "Yes", add
 label define pediseye_lbl 2 "No", add
 label define pediseye_lbl -1 "Not in Universe", add
@@ -6685,9 +6271,6 @@ label define pxdisout_lbl 52 "Don't Know To Blank", add
 label define pxdisout_lbl 12 "Don't Know To Value", add
 label define pxdisout_lbl 10 "Value To Value", add
 label define hucval_lbl 0 "None or not in universe", add
-label define hucval_lbl min "1", add
-label define hucval_lbl max "3899961", add
-label define hucval_lbl description "Range", add
 label define i_peninc_lbl 9 "FL_665 ? 1 (full record impute)", add
 label define i_peninc_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_peninc_lbl 4 "Level 101 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
@@ -6701,13 +6284,7 @@ label define i_peninc_lbl 5 "Level 102 statistical match (value without ranges, 
 label define ownmrks_lbl 0 "Out of universe", add
 label define ownmrks_lbl 1 "Yes", add
 label define ownmrks_lbl 2 "No", add
-label define sur_val2_lbl min "0", add
-label define sur_val2_lbl max "999999", add
-label define sur_val2_lbl description "0:999999", add
 label define h_respnm_lbl 0 "Blank or impossible", add
-label define h_respnm_lbl min "1", add
-label define h_respnm_lbl max "99", add
-label define h_respnm_lbl description "Range", add
 label define i_fmoop2_lbl 0 "Reported", add
 label define i_fmoop2_lbl 1 "Hotdeck imputation", add
 label define i_fmoop2_lbl -1 "Out of Universe", add
@@ -6755,9 +6332,6 @@ label define nonmftyp2_lbl 3 "Self-only plan", add
 label define nonmftyp2_lbl 0 "Out of universe", add
 label define nonmftyp2_lbl 1 "Family Plan", add
 label define nonmftyp2_lbl 2 "Self plus one", add
-label define spm_actc_lbl min "0", add
-label define spm_actc_lbl max "99999", add
-label define spm_actc_lbl description "Range", add
 label define dis_cs_lbl 1 "Yes", add
 label define dis_cs_lbl 2 "No", add
 label define dis_cs_lbl 0 "Not In Universe", add
@@ -6770,13 +6344,7 @@ label define i_now_depnonm_lbl 0 "Reported", add
 label define i_now_depnonm_lbl -1 "Out of Universe", add
 label define i_now_depnonm_lbl 2 "Logical imputation", add
 label define i_now_depnonm_lbl 1 "Hotdeck imputation", add
-label define spm_eitc_lbl min "0", add
-label define spm_eitc_lbl max "999999", add
-label define spm_eitc_lbl description "0:999999", add
 label define hssival_lbl 0 "None", add
-label define hssival_lbl min "1", add
-label define hssival_lbl max "389961", add
-label define hssival_lbl description "Range", add
 label define i_pub_lbl 0 "Reported", add
 label define i_pub_lbl 3 "Whole unit imputation", add
 label define i_pub_lbl -1 "Infant born after calendar year", add
@@ -6785,9 +6353,6 @@ label define i_pub_lbl 2 "Logical imputation", add
 label define wageotr_lbl 2 "No", add
 label define wageotr_lbl 1 "Yes", add
 label define wageotr_lbl 0 "Not In Universe", add
-label define fmlasidx_lbl min "1", add
-label define fmlasidx_lbl max "39", add
-label define fmlasidx_lbl description "Range", add
 label define outdir_lbl 1 "Yes", add
 label define outdir_lbl 2 "No", add
 label define outdir_lbl 0 "Out of universe", add
@@ -6860,9 +6425,6 @@ label define now_millin_lbl 16 "Line 16", add
 label define now_millin_lbl 1 "Line 1", add
 label define now_millin_lbl 7 "Line 7", add
 label define now_millin_lbl 11 "Line 11", add
-label define htotval_lbl min "-999999", add
-label define htotval_lbl max "99999999", add
-label define htotval_lbl description "Range", add
 label define pepar2typ_lbl 1 "BIOLOGICAL", add
 label define pepar2typ_lbl -1 "No Parent 2 present", add
 label define pepar2typ_lbl 3 "Adopted", add
@@ -6902,9 +6464,6 @@ label define i_mrks_lbl 0 "Reported", add
 label define i_mrks_lbl -1 "Infant born after calendar year", add
 label define ttrdint_val_lbl 0 "Not Topcoded", add
 label define ttrdint_val_lbl 1 "Topcoded", add
-label define spm_resources_lbl min "-999999", add
-label define spm_resources_lbl max "9999999", add
-label define spm_resources_lbl description "-999999:9999999", add
 label define now_dirftyp2_lbl 0 "Out of universe", add
 label define now_dirftyp2_lbl 2 "Self plus one", add
 label define now_dirftyp2_lbl 1 "Family Plan", add
@@ -6971,9 +6530,6 @@ label define strkuc_lbl 1 "Yes", add
 label define strkuc_lbl 2 "No", add
 label define strkuc_lbl 0 "Not In Universe", add
 label define hpawval_lbl 0 "None", add
-label define hpawval_lbl min "1", add
-label define hpawval_lbl max "779961", add
-label define hpawval_lbl description "Range", add
 label define now_hpub_lbl 2 "Some members of the household", add
 label define now_hpub_lbl 3 "No members of the household", add
 label define now_hpub_lbl 1 "All members of the household", add
@@ -7013,9 +6569,6 @@ label define dst_sc2_yng_lbl 3 "Roth IRA", add
 label define axhscol_lbl 0 "No change or children or armed forces", add
 label define axhscol_lbl 4 "Allocated", add
 label define fedval_lbl 0 "None or not in universe", add
-label define fedval_lbl min "1", add
-label define fedval_lbl max "3899961", add
-label define fedval_lbl description "Range", add
 label define now_dirlin_lbl 18 "Line 18", add
 label define now_dirlin_lbl 10 "Line 10", add
 label define now_dirlin_lbl 4 "Line 4", add
@@ -7043,24 +6596,12 @@ label define i_vettyp_lbl 9 "Full record imputation (FL_665 ? 1)", add
 label define hrwicyn_lbl 1 "Yes", add
 label define hrwicyn_lbl 0 "Niu", add
 label define hrwicyn_lbl 2 "No", add
-label define pearnval_lbl min "-99999", add
-label define pearnval_lbl max "99999999", add
-label define pearnval_lbl description "-99999:99999999", add
 label define nocov_cyr_lbl 0 "Infant born after calendar year", add
 label define nocov_cyr_lbl 1 "Coverage for all of year", add
 label define nocov_cyr_lbl 3 "No coverage for full year", add
 label define nocov_cyr_lbl 2 "No coverage for some of year", add
 label define ws_val_lbl 0 "None or not in universe", add
-label define ws_val_lbl min "1", add
-label define ws_val_lbl max "9999999", add
-label define ws_val_lbl description "Range", add
 label define hsurval_lbl 0 "None or not in universe", add
-label define hsurval_lbl min "1", add
-label define hsurval_lbl max "3899961", add
-label define hsurval_lbl description "Range", add
-label define spm_numper_lbl min "0", add
-label define spm_numper_lbl max "20", add
-label define spm_numper_lbl description "0:20", add
 label define now_outdir_lbl 0 "Out of universe", add
 label define now_outdir_lbl 1 "Yes", add
 label define now_outdir_lbl 2 "No", add
@@ -7072,22 +6613,10 @@ label define i_depnonm_lbl 1 "Hotdeck imputation", add
 label define i_depnonm_lbl 0 "Reported", add
 label define i_depnonm_lbl -1 "Out of Universe", add
 label define i_depnonm_lbl 3 "Whole unit imputation", add
-label define sur_val1_lbl min "0", add
-label define sur_val1_lbl max "999999", add
-label define sur_val1_lbl description "0:999999", add
-label define pen_val1_lbl min "0", add
-label define pen_val1_lbl max "999999", add
-label define pen_val1_lbl description "0:999999", add
-label define pen_val2_lbl min "0", add
-label define pen_val2_lbl max "999999", add
-label define pen_val2_lbl description "0:999999", add
 label define a_explf_lbl 2 "Unemployed", add
 label define a_explf_lbl 1 "Employed", add
 label define a_explf_lbl 0 "Not in experienced labor force", add
 label define a_hrs1_lbl 0 "Not in univ. or children & Armed Forces", add
-label define a_hrs1_lbl min "1", add
-label define a_hrs1_lbl max "99", add
-label define a_hrs1_lbl description "Range", add
 label define axuslhrs_lbl 4 "Allocated", add
 label define axuslhrs_lbl 0 "No change or children or armed forces", add
 label define i_now_owngrp_lbl -1 "Out of Universe", add
@@ -7106,9 +6635,6 @@ label define i_outmrk_lbl 0 "Reported", add
 label define vacare_lbl 0 "Infant born after calendar year", add
 label define vacare_lbl 1 "Yes", add
 label define vacare_lbl 2 "No", add
-label define spm_numadults_lbl min "0", add
-label define spm_numadults_lbl max "20", add
-label define spm_numadults_lbl description "0:20", add
 label define pecould_lbl 0 "Out of universe", add
 label define pecould_lbl 2 "No", add
 label define pecould_lbl 1 "Yes", add
@@ -7129,12 +6655,6 @@ label define axpayabs_lbl 4 "Allocated", add
 label define axpayabs_lbl 0 "No change or children or armed forces", add
 label define spm_hage_lbl 85 "85 years of age and greater", add
 label define spm_hage_lbl 80 "80 - 84 years of age", add
-label define spm_hage_lbl min "15", add
-label define spm_hage_lbl max "79", add
-label define spm_hage_lbl description "15 - 79 years of age", add
-label define fhip_val_lbl min "0", add
-label define fhip_val_lbl max "9999999", add
-label define fhip_val_lbl description "0:9999999", add
 label define i_annval_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_annval_lbl 2 "Level 2 statistical match (value with ranges)", add
 label define i_annval_lbl 1 "Level 1 statistical match (value with ranges)", add
@@ -7226,9 +6746,6 @@ label define wicyn_lbl 2 "No", add
 label define now_depgrp_lbl 0 "Out of universe", add
 label define now_depgrp_lbl 2 "No", add
 label define now_depgrp_lbl 1 "Yes", add
-label define tax_inc_lbl min "0", add
-label define tax_inc_lbl max "9999999", add
-label define tax_inc_lbl description "Dollar amount", add
 label define i_depdir_lbl 1 "Hotdeck imputation", add
 label define i_depdir_lbl 3 "Whole unit imputation", add
 label define i_depdir_lbl -1 "Out of Universe", add
@@ -7323,9 +6840,6 @@ label define esielig5_lbl 2 "No", add
 label define esielig6_lbl 1 "Yes", add
 label define esielig6_lbl 2 "No", add
 label define esielig6_lbl 0 "NIU", add
-label define ffpos_lbl min "1", add
-label define ffpos_lbl max "39", add
-label define ffpos_lbl description "Range", add
 label define now_ownpriv_lbl 1 "Yes", add
 label define now_ownpriv_lbl 2 "No", add
 label define now_ownpriv_lbl 0 "Out of universe", add
@@ -7460,9 +6974,6 @@ label define uc_yn_lbl 0 "Niu", add
 label define uc_yn_lbl 2 "No", add
 label define uc_yn_lbl 1 "Yes", add
 label define hwcval_lbl 0 "None or not in universe", add
-label define hwcval_lbl min "1", add
-label define hwcval_lbl max "3899961", add
-label define hwcval_lbl description "Range", add
 label define i_phmemp_lbl 0 "No change", add
 label define i_phmemp_lbl 1 "Allocated", add
 label define i_phmemp_lbl 9 "Full record imputation (FL_665 ? 1)", add
@@ -7522,9 +7033,6 @@ label define i_esitake3_lbl 0 "Reported", add
 label define i_esitake3_lbl 2 "Logical imputation", add
 label define i_esitake3_lbl -1 "Out of Universe", add
 label define i_esitake3_lbl 1 "Hotdeck imputation", add
-label define ss_val_lbl min "0", add
-label define ss_val_lbl max "99999", add
-label define ss_val_lbl description "0:99999", add
 label define a_famrel_lbl 4 "Other relative(primary family & unrelate", add
 label define a_famrel_lbl 1 "Reference person", add
 label define a_famrel_lbl 2 "Spouse", add
@@ -7532,13 +7040,7 @@ label define a_famrel_lbl 0 "Not a family member", add
 label define a_famrel_lbl 3 "Child", add
 label define finc_fin_lbl 1 "Yes", add
 label define finc_fin_lbl 2 "No", add
-label define fseval_lbl min "-389961", add
-label define fseval_lbl max "3899961", add
-label define fseval_lbl description "Range", add
 label define hssval_lbl 0 "None or not in universe", add
-label define hssval_lbl min "1", add
-label define hssval_lbl max "1169961", add
-label define hssval_lbl description "Range", add
 label define i_now_mil_lbl 1 "Hotdeck imputation", add
 label define i_now_mil_lbl 0 "Reported", add
 label define i_now_mil_lbl 2 "Logical imputation", add
@@ -7623,13 +7125,7 @@ label define dis_sc1_lbl 9 "state temporary sickness", add
 label define dis_sc1_lbl 5 "State or local gov't employee disability", add
 label define dis_sc1_lbl 10 "Other or don't know", add
 label define dis_sc1_lbl 1 "Worker's compensation", add
-label define fotc_val_lbl min "0", add
-label define fotc_val_lbl max "9999999", add
-label define fotc_val_lbl description "0:9999999", add
 label define hdisval_lbl 0 "None or not in universe", add
-label define hdisval_lbl min "1", add
-label define hdisval_lbl max "3899961", add
-label define hdisval_lbl description "Range", add
 label define i_seyn_lbl 7 "Level 104 statistical match (age, sex)", add
 label define i_seyn_lbl 4 "Level 101 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_seyn_lbl 8 "Level 105 statistical match (all donors can match to all recipients)", add
@@ -7756,9 +7252,6 @@ label define now_nonmlin_lbl 17 "Line 17", add
 label define now_nonmlin_lbl 14 "Line 14", add
 label define now_nonmlin_lbl 10 "Line 10", add
 label define now_nonmlin_lbl 9 "Line 9", add
-label define fannval_lbl min "0", add
-label define fannval_lbl max "9999999", add
-label define fannval_lbl description "0:9999999", add
 label define age1_lbl 9 "40 to 44 years", add
 label define age1_lbl 6 "25 to 29 years", add
 label define age1_lbl 5 "22 to 24 years", add
@@ -7798,20 +7291,11 @@ label define mrksout_lbl 1 "Yes", add
 label define mrksout_lbl 2 "No", add
 label define mrksout_lbl 0 "Out of universe", add
 label define cap_val_lbl 0 "none or niu", add
-label define cap_val_lbl min "1", add
-label define cap_val_lbl max "999999", add
-label define cap_val_lbl description "1:999999", add
 label define i_now_outmil_lbl 3 "Whole unit imputation", add
 label define i_now_outmil_lbl -1 "Out of Universe", add
 label define i_now_outmil_lbl 0 "Reported", add
 label define i_now_outmil_lbl 2 "Logical imputation", add
 label define i_now_outmil_lbl 1 "Hotdeck imputation", add
-label define semp_val_lbl min "-9999", add
-label define semp_val_lbl max "9999999", add
-label define semp_val_lbl description "Range", add
-label define dbtn_val_lbl min "0", add
-label define dbtn_val_lbl max "9999999", add
-label define dbtn_val_lbl description "0:9999999", add
 label define finc_div_lbl 2 "No", add
 label define finc_div_lbl 1 "Yes", add
 label define tcwsval_lbl 1 "Suppressed value", add
@@ -7866,9 +7350,6 @@ label define a_whyabs_lbl 6 "Temporary layoff (under 30 days)", add
 label define a_whyabs_lbl 2 "On vacation", add
 label define a_whyabs_lbl 0 "Not in univ or children and Armed Forces", add
 label define wc_val_lbl 0 "None or not in universe", add
-label define wc_val_lbl min "1", add
-label define wc_val_lbl max "99999", add
-label define wc_val_lbl description "Range", add
 label define i_rntyn_lbl 5 "Level 102 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_rntyn_lbl 9 "FL_665 ? 1 (full record impute)", add
 label define i_rntyn_lbl 7 "Level 104 statistical match (age, sex)", add
@@ -7919,9 +7400,6 @@ label define nonm_lbl 1 "Yes", add
 label define now_ownmrkun_lbl 0 "Out of universe", add
 label define now_ownmrkun_lbl 2 "No", add
 label define now_ownmrkun_lbl 1 "Yes", add
-label define spm_caphousesub_lbl min "0", add
-label define spm_caphousesub_lbl max "99999", add
-label define spm_caphousesub_lbl description "00000:99999", add
 label define i_dstsccomp_lbl 3 "Level 3 statistical match (value with ranges)", add
 label define i_dstsccomp_lbl 8 "Level 105 statistical match (all donors can match to all recipients)", add
 label define i_dstsccomp_lbl 7 "Level 104 statistical match (age, sex)", add
@@ -7932,9 +7410,6 @@ label define i_dstsccomp_lbl 0 "No allocation", add
 label define i_dstsccomp_lbl 4 "Level 101 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_dstsccomp_lbl 9 "FL_665 ? 1 (full record impute)", add
 label define i_dstsccomp_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
-label define potc_val_lbl min "0", add
-label define potc_val_lbl max "99999", add
-label define potc_val_lbl description "0:99999", add
 label define resnss1_lbl 1 "Retired", add
 label define resnss1_lbl 5 "Surviving child", add
 label define resnss1_lbl 8 "Other (adult or child)", add
@@ -7970,9 +7445,6 @@ label define rint_sc1_lbl 7 "Other type of retirement account", add
 label define rint_sc1_lbl 2 "403b account", add
 label define rint_sc1_lbl 5 "KEOGH plan", add
 label define rint_sc1_lbl 1 "401k account", add
-label define spm_childcarexpns_lbl min "0", add
-label define spm_childcarexpns_lbl max "999999", add
-label define spm_childcarexpns_lbl description "0:999999", add
 label define resnss2_lbl 2 "Disabled (adult or child)", add
 label define resnss2_lbl 4 "Spouse", add
 label define resnss2_lbl 3 "Widowed", add
@@ -8082,12 +7554,6 @@ label define i_hhotno_lbl 1 "Allocated", add
 label define i_hhotno_lbl 0 "No change", add
 label define tcap_val_lbl 1 "Topcoded", add
 label define tcap_val_lbl 0 "Not Topcoded", add
-label define prswkxpns_lbl min "0", add
-label define prswkxpns_lbl max "1999", add
-label define prswkxpns_lbl description "0", add
-label define ann_val_lbl min "-1", add
-label define ann_val_lbl max "999999", add
-label define ann_val_lbl description "-1:999999", add
 label define i_fotcval_lbl 2 "Logical imputation", add
 label define i_fotcval_lbl 3 "Whole unit imputation", add
 label define i_fotcval_lbl -1 "Out of Universe", add
@@ -8127,9 +7593,6 @@ label define pxdisphy_lbl 3 "Refused - No Change", add
 label define now_mrkunout_lbl 1 "Yes", add
 label define now_mrkunout_lbl 0 "Out of universe", add
 label define now_mrkunout_lbl 2 "No", add
-label define hchcare_val_lbl min "-1", add
-label define hchcare_val_lbl max "999999", add
-label define hchcare_val_lbl description "-1:999999", add
 label define oi_off_lbl 3 "Afdc", add
 label define oi_off_lbl 15 "Longest job", add
 label define oi_off_lbl 13 "Annuities or paid up insurance policies", add
@@ -8170,9 +7633,6 @@ label define i_wsval_lbl 8 "Level 105 statistical match (all donors can match to
 label define a_unmem_lbl 1 "Yes", add
 label define a_unmem_lbl 0 "Not in universe or children & Armed Forc", add
 label define a_unmem_lbl 2 "No", add
-label define spm_medxpns_lbl min "0", add
-label define spm_medxpns_lbl max "9999999", add
-label define spm_medxpns_lbl description "0:9999999", add
 label define i_owndir_lbl 0 "Reported", add
 label define i_owndir_lbl 2 "Logical imputation", add
 label define i_owndir_lbl 1 "Hotdeck imputation", add
@@ -8188,14 +7648,8 @@ label define i_chspval_lbl 9 "FL_665 ? 1 (full record impute)", add
 label define i_chspval_lbl 5 "Level 102 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
 label define i_chspval_lbl 8 "Level 105 statistical match (all donors can match to all recipients)", add
 label define i_chspval_lbl 6 "Level 103 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
-label define phip_val_lbl min "0", add
-label define phip_val_lbl max "999999", add
-label define phip_val_lbl description "0:999999", add
 label define fpovcut_lbl 0 "niu (primary and secondary individuals)", add
 label define fpovcut_lbl -1 "not in poverty unvierse (head of household under 15)", add
-label define fpovcut_lbl min "1", add
-label define fpovcut_lbl max "60000", add
-label define fpovcut_lbl description "range", add
 label define esitake1_lbl 1 "Yes", add
 label define esitake1_lbl 2 "No", add
 label define esitake1_lbl 0 "NIU", add
@@ -8802,9 +8256,6 @@ label define esitake4_lbl 2 "No", add
 label define esitake4_lbl 1 "Yes", add
 label define esitake4_lbl 0 "NIU", add
 label define fpawval_lbl 0 "None", add
-label define fpawval_lbl min "1", add
-label define fpawval_lbl max "779961", add
-label define fpawval_lbl description "Range", add
 label define esitake5_lbl 2 "No", add
 label define esitake5_lbl 1 "Yes", add
 label define esitake5_lbl 0 "NIU", add
@@ -8873,9 +8324,6 @@ label define frspov_lbl 10 "3.00 to 3.49", add
 label define frspov_lbl 6 "1.50 to 1.74", add
 label define frspov_lbl 13 "4.50 to 4.99", add
 label define frspov_lbl 1 "Under .50", add
-label define spm_snapsub_lbl min "0", add
-label define spm_snapsub_lbl max "99999", add
-label define spm_snapsub_lbl description "00000:99999", add
 label define hcsp_yn_lbl 0 "Not In Universe", add
 label define hcsp_yn_lbl 2 "No", add
 label define hcsp_yn_lbl 1 "Yes", add
@@ -8885,9 +8333,6 @@ label define i_ssival_lbl 0 "No allocation", add
 label define i_ssival_lbl 14 "Value imputed is between 75-100% of total in composite variable", add
 label define i_ssival_lbl 13 "Value imputed is between 50-75% of total in composite variable", add
 label define i_ssival_lbl 12 "Value imputed is between 25-50% of total in composite variable", add
-label define ssi_val_lbl min "0", add
-label define ssi_val_lbl max "99999", add
-label define ssi_val_lbl description "0:99999", add
 label define axunmem_lbl 0 "No change or children or armed forces", add
 label define axunmem_lbl 4 "Allocated", add
 label define i_chspyn_lbl 5 "Level 102 statistical match (value without ranges, recipiency Ã¯Â¿Â½_ynÃ¯Â¿Â½)", add
@@ -9248,9 +8693,6 @@ label define industry_lbl 8670 "ENT-RECREATIONAL VEHICLE PARKS AND CAMPS, AND RO
 label define i_dstval1comp_lbl 0 "No allocation", add
 label define i_dstval1comp_lbl 10 "Some of the components are imputed", add
 label define i_dstval1comp_lbl 11 "All of the components imputed", add
-label define h_seq_lbl min "1", add
-label define h_seq_lbl max "99999", add
-label define h_seq_lbl description "Range", add
 label define i_vacare_lbl -1 "Infant born after calendar year", add
 label define i_vacare_lbl 3 "Whole unit imputation", add
 label define i_vacare_lbl 2 "Logical imputation", add
@@ -9258,9 +8700,6 @@ label define i_vacare_lbl 0 "Reported", add
 label define i_vacare_lbl 1 "Hotdeck imputation", add
 label define axftpt_lbl 4 "Allocated", add
 label define axftpt_lbl 0 "No change or children or armed forces", add
-label define hannval_lbl min "0", add
-label define hannval_lbl max "999999", add
-label define hannval_lbl description "0:999999", add
 label define now_outmil_lbl 1 "Yes", add
 label define now_outmil_lbl 2 "No", add
 label define now_outmil_lbl 0 "Out of universe", add
@@ -9271,9 +8710,6 @@ label define earner_lbl 2 "Nonearner", add
 label define earner_lbl 0 "Not In Universe", add
 label define earner_lbl 1 "Earner", add
 label define fsurval_lbl 0 "None or not in universe", add
-label define fsurval_lbl min "1", add
-label define fsurval_lbl max "3899961", add
-label define fsurval_lbl description "Range", add
 label values chelsew_yn chelsew_yn_lbl
 label values i_now_mcaid i_now_mcaid_lbl
 label values hcov hcov_lbl
