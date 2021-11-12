@@ -21,9 +21,10 @@ cps <- cps_raw %>%
                     "metadata_type", "more_scrap", "value"), 
            sep =  "\\.",
            extra = "merge") %>%
+  mutate(variable = tolower(variable)) %>% 
   filter(!(variable %in% c("for", "in", "ucgid", "yyyymm"))) %>%
-  select(-matches("scrap")) %>%
-  mutate(variable = tolower(variable))
+  select(-matches("scrap"))
+  
 
 #check number of unique variables in data set 
 # (1044 minus 3: 'for', 'in', and 'ucgid' which are API predicates, not variables)
