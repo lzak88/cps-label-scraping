@@ -21,7 +21,7 @@ cps <- cps_raw %>%
                     "metadata_type", "more_scrap", "value"), 
            sep =  "\\.",
            extra = "merge") %>%
-  filter(!(variable %in% c("for", "in", "ucgid"))) %>%
+  filter(!(variable %in% c("for", "in", "ucgid", "yyyymm"))) %>%
   select(-matches("scrap")) %>%
   mutate(variable = tolower(variable))
 
